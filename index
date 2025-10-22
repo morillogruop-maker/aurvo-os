@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURVO-AI — Oro en movimiento</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: gold;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 3.2em;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #d4af37, 0 0 20px #c0a060;
+    }
+    p {
+      color: #d4af37;
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: 1px solid gold;
+      border-radius: 30px;
+      background: transparent;
+      color: gold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: gold;
+      color: black;
+      box-shadow: 0 0 10px gold;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ AURVO-AI ✨</h1>
+  <p>Oro en movimiento. Tecnología, arte y lujo supremo.</p>
+  <button class="btn" onclick="window.location.href='https://github.com/morillogruop-maker/aurvo-ai'">Entrar al Proyecto</button>
+</body>
+</html>
