@@ -24,7 +24,7 @@ def connect(module_slug: str) -> Generator[sqlite3.Connection, None, None]:
 
     module = get_module(module_slug)
     db_path = get_database_path(module)
-    connection = sqlite3.connect(db_path)
+    connection = sqlite3.connect(db_path, check_same_thread=False)
     try:
         connection.row_factory = sqlite3.Row
         yield connection
