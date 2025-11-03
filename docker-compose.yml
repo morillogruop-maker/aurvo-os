@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  aurvo-backend:
+    build: .
+    container_name: aurvo-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - AURVO_DATA_DIR=/app/data
+    volumes:
+      - ./data:/app/data

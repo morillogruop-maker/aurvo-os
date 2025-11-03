@@ -11,11 +11,12 @@
       color: gold;
       font-family: "Poppins", sans-serif;
       text-align: center;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
     }
     h1 {
       font-size: 3.2em;
@@ -25,7 +26,7 @@
     p {
       color: #d4af37;
       font-size: 1.2em;
-      max-width: 600px;
+      max-width: 700px;
     }
     .btn {
       margin-top: 20px;
@@ -37,17 +38,30 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn:hover {
       background-color: gold;
       color: black;
       box-shadow: 0 0 10px gold;
     }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <h1>✨ AURVO-AI ✨</h1>
-  <p>Oro en movimiento. Tecnología, arte y lujo supremo.</p>
-  <button class="btn" onclick="window.location.href='https://github.com/morillogruop-maker/aurvo-ai'">Entrar al Proyecto</button>
+  <p>Oro en movimiento. Tecnología, arte y lujo supremo. Accede a la API cognitiva y a la documentación para orquestar los módulos SantoSecure, HOC Engine, AurvoCloud, AurvoUI y Aurvo Vehicles.</p>
+  <div class="links">
+    <a class="btn" href="https://github.com/morillogruop-maker/aurvo-ai" target="_blank" rel="noopener">Repositorio Maestro</a>
+    <a class="btn" href="/docs" target="_blank" rel="noopener">Swagger UI</a>
+    <a class="btn" href="/redoc" target="_blank" rel="noopener">ReDoc</a>
+  </div>
 </body>
 </html>
